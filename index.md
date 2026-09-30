@@ -4,8 +4,8 @@ title: Privacy Policy — Bean Slinger
 
 # Privacy Policy — Bean Slinger
 
-**Last updated: 9 September 2026**
-**Effective: 9 September 2026**
+**Last updated: 30 September 2026**
+**Effective: 30 September 2026**
 
 ---
 
@@ -42,15 +42,19 @@ us with personal data, contact us at **danjonlang91@hotmail.com** and we will ac
 
 ## 3. Summary — the short version
 
-- The Game has **no accounts and no sign-in.** We do not ask for your name, email address,
-  phone number, postal address, photographs or contacts.
+- The Game has **no accounts you sign in to.** We do not ask for your real name, email
+  address, phone number, postal address, photographs or contacts.
+- **Online leaderboards are optional and off until you say yes.** If you choose to post your
+  Overtime scores, the Game creates an **anonymous** online ID and publishes your
+  **nickname and scores** on public boards (Section 4.3). You can stop posting, or delete
+  everything, at any time from the **i** button on the main menu → LEADERBOARD.
 - Your **game progress is stored on your own device**, not on our servers.
 - The Game **shows advertisements supplied by Google AdMob**. To do this, Google's
   advertising software collects certain data from your device — this is the main data
   processing that happens when you play.
 - In the UK, EEA, Switzerland and certain US states, you are asked **before** personalised
-  advertising is enabled, and **you can change that choice at any time** from Settings →
-  AD PRIVACY SETTINGS (reached via the speaker icon on the main menu).
+  advertising is enabled, and **you can change that choice at any time** from the **i**
+  button on the main menu → AD PRIVACY SETTINGS.
 - If your consent cannot be established for any reason, the Game defaults to
   **non-personalised** advertising rather than assuming permission.
 - We do not sell your personal data.
@@ -79,6 +83,32 @@ debugging and game balancing.
 - If this changes in a future version — for example if we add an opt-in crash or analytics
   reporting service — we will update this policy and the Google Play Data safety
   disclosure **before** that version is released.
+
+### 4.3 Online leaderboards (optional, only if you choose to post)
+The first time you open Overtime, the Game asks whether you want to post your Overtime
+scores to public online leaderboards. **Nothing below happens unless you say yes.** You can
+look at the leaderboards without posting anything, and without any ID being created.
+
+If you say yes, we process:
+
+| Data | Why | Who can see it |
+|---|---|---|
+| An **anonymous ID** created by Google Firebase Authentication. It is not linked to your Google account, email or phone number. | So your scores are yours, and so limits and bans apply to one player | Nobody but us |
+| Your **nickname**: one we generate ("Speedy Pickle 42"), or one you choose | To show on the boards | **Everyone** who views the leaderboards |
+| Your **Overtime results**: the line (3/4/5 lanes), the score, how long the run lasted, beans sorted and gold banked, and when it was posted | To rank you, and to check the score is possible | The score and rank: **everyone**. The rest: nobody but us |
+| **Reports** you make about other players' nicknames (which nickname, and when) | To remove offensive names | Nobody but us |
+| Your **IP address**, as part of each request | To deliver the request and to limit abuse (rate limiting). We do **not** log or store it | Our hosting providers, transiently |
+
+- **Where it is stored:** Google Firebase (Cloud Firestore, London region) and processed by
+  our gateway on Cloudflare Workers. The gateway is the only thing that reads or writes the
+  data; the database refuses direct access from any device.
+- **Nicknames are moderated.** Names are checked automatically against offensive-word lists
+  in many languages; players can report a name; a reported name may be replaced, and players
+  who break the rules can be removed from the leaderboards. See Section 15a.
+- **How to stop or delete:** main menu → **i** → LEADERBOARD → **STOP POSTING SCORES** (your
+  existing entries stay until you delete them), or **DELETE MY LEADERBOARD DATA**, which
+  permanently deletes your scores, nickname, reports and the anonymous ID itself.
+  Uninstalling the Game does **not** delete leaderboard data, so delete it first, or email us.
 
 ---
 
@@ -122,9 +152,8 @@ The first time you open the Game, if you are in the UK, EEA, Switzerland or a re
 state, you will be shown a consent form provided by Google's User Messaging Platform. It
 asks whether you agree to your data being used for personalised advertising.
 
-- **You can change or withdraw your choice at any time.** In the Game, tap the **speaker
-  icon on the main menu** to open Settings, then **AD PRIVACY SETTINGS**. This re-opens the
-  same consent form. (If your region has no consent choices to make, the Game will tell you
+- **You can change or withdraw your choice at any time.** In the Game, tap the round **i**
+  button on the main menu, then **AD PRIVACY SETTINGS**. This re-opens the same consent form. (If your region has no consent choices to make, the Game will tell you
   so rather than showing an empty form.)
 - Withdrawing consent does not stop advertising — the Game remains free and ad-funded —
   but the advertisements you see will be **non-personalised**.
@@ -143,6 +172,8 @@ Where UK or EU data protection law applies, we rely on:
 | Serving **personalised** advertising | **Consent** (Article 6(1)(a)), collected via the consent form in Section 6 |
 | Serving **non-personalised** advertising, fraud prevention, and basic ad delivery | **Legitimate interests** (Article 6(1)(f)) — funding a free game and preventing fraud |
 | Diagnostic and stability data | **Legitimate interests** — keeping the Game working |
+| Posting your nickname and scores to the online leaderboards | **Consent** (Article 6(1)(a)), asked in the Game before anything is posted; withdraw it any time (Section 4.3) |
+| Checking posted scores are possible, rate limiting, handling reports and removing offensive names | **Legitimate interests** — keeping the leaderboards fair and safe for everyone on them |
 
 Where we rely on legitimate interests, we have considered the impact on you and concluded
 that the processing is limited, expected in an ad-funded free game, and does not override
@@ -156,6 +187,10 @@ your rights. You may object to it (see Section 9).
   or uninstall it. We do not hold a copy.
 - **Advertising data held by Google:** retained according to Google's own retention
   policies, which are described in the Google links in Section 5. We do not control this.
+- **Online leaderboards:** daily boards are deleted automatically about two days after the
+  day ends, weekly boards about two weeks after the week ends. Your all-time best, your
+  nickname and your anonymous ID are kept **until you delete them** (Section 4.3) or until
+  the leaderboards are shut down. Reports are kept until they have been reviewed.
 - **Correspondence:** if you email us, we keep that message and our reply for as long as
   needed to deal with your query and to keep a record of it, normally no longer than
   **24 months**.
@@ -174,9 +209,13 @@ Depending on where you live, you may have the right to:
 - **withdraw consent** at any time (see Section 6);
 - **not be discriminated against** for exercising these rights.
 
-**How to exercise them.** Because the Game has no accounts and we hold no identifiers that
-link to you, we usually cannot locate data about a specific person from our side. In
-practice:
+**How to exercise them.** The Game has no accounts you sign in to. Apart from the optional
+leaderboards, we hold no identifiers that link to you. In practice:
+
+- **Leaderboard data:** delete it yourself, instantly, from the **i** button → LEADERBOARD
+  → DELETE MY LEADERBOARD DATA. Your nickname and scores are shown to you on the
+  leaderboard itself. If you have lost access to the Game, email us with your nickname and
+  roughly when you last posted, and we will do our best to find and delete it.
 
 - To delete everything we could conceivably hold on your device: uninstall the Game or
   clear its data.
@@ -205,7 +244,12 @@ Google processes advertising data on servers located in a number of countries, i
 the United States. Where data is transferred out of the UK or EEA, Google states that it
 relies on appropriate safeguards such as Standard Contractual Clauses and, where
 applicable, the EU–US and UK–US Data Privacy Framework. Details are in the Google links in
-Section 5. We do not ourselves transfer your personal data internationally.
+Section 5.
+
+If you post to the online leaderboards, the data is stored by Google Firebase in the London
+region and passes through Cloudflare's network, which may process requests in other
+countries, including the United States. Both rely on Standard Contractual Clauses and, where
+applicable, the EU–US and UK–US Data Privacy Framework.
 
 ---
 
@@ -214,6 +258,10 @@ Section 5. We do not ourselves transfer your personal data internationally.
 We store your game data on your own device using the security controls provided by your
 device and operating system. Data transmitted by the advertising software is encrypted in
 transit using TLS.
+
+Leaderboard data is sent only over encrypted connections (TLS). The leaderboard database
+cannot be read or written directly from any device; every request passes through our
+gateway, which verifies who is asking and checks what is sent.
 
 No method of storage or transmission is completely secure. While we take reasonable steps to
 protect information, **we cannot guarantee absolute security**, and any transmission is at
@@ -263,10 +311,15 @@ The Game uses the following third-party services:
 
 - **Google AdMob** (advertising) — https://policies.google.com/privacy
 - **Google User Messaging Platform** (consent management) — https://policies.google.com/privacy
+- **Google Firebase** (Authentication and Cloud Firestore — online leaderboards, only if you
+  choose to post) — https://firebase.google.com/support/privacy
+- **Cloudflare Workers** (our leaderboard gateway, only if you choose to post) —
+  https://www.cloudflare.com/privacypolicy/
 
 We do not permit these services to use your data for purposes other than providing their
-service to us, save as described in their own policies. These two are the only third-party
-services embedded in the Game.
+service to us, save as described in their own policies. AdMob and the User Messaging
+Platform are the only third-party software embedded in the Game. Firebase and Cloudflare are
+reached over the internet, and only for the leaderboards.
 
 ---
 
@@ -276,6 +329,16 @@ Advertisements shown in the Game may link to third-party websites or app store l
 we do not operate or control. **We are not responsible for the content, products, or privacy
 practices of those third parties**, and this policy does not apply to them. We encourage you
 to read the privacy policy of any third-party destination you visit.
+
+---
+
+## 15a. Leaderboard rules
+
+Nicknames must not be offensive, hateful, sexual, or impersonate anyone else, including us
+or the app stores. Names are checked automatically before they appear. A name reported by
+several players is replaced with a generated one straight away and reviewed. We may remove
+scores that could not have been achieved in the Game, and we may stop players who break
+these rules from posting.
 
 ---
 
